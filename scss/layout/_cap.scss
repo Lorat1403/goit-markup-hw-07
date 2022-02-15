@@ -1,0 +1,114 @@
+.cap {
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    background-color: #c4c4c4;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/бэкфон.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cap-title {
+    font-size: 44px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.tumb-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cap-btn {
+    width: 200px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: #2196f3;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cap-btn:hover,
+.cap-btn:focus {
+    color: #ffffff;
+    background-color: #188ce8;
+}
+
+.section-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--first-title-color);
+    margin-bottom: 50px;
+}
+
+
+/* ----qualities---- */
+
+.qualities {
+    padding-bottom: 0;
+}
+
+.qualities-list {
+    display: flex;
+    margin: 0 auto;
+}
+
+.qualities-list>.qualities-item {
+    flex-basis: calc(100% / 4);
+}
+
+.qualities-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--first-title-color);
+}
+
+.qualities-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+    text-align: left;
+}
+
+.qualities-item+.qualities-item {
+    margin-left: 30px;
+}
+
+.q-icons {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    background-color: #f5f4fa;
+}
+
+.q-icon {
+    margin-top: 25px;
+    width: 70px;
+    height: 70px;
+}
