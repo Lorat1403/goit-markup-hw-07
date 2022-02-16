@@ -4,6 +4,12 @@
     padding-bottom: 25px;
     background-color: #ffffff;
     border-bottom: 1px solid #ececec;
+    .nav-logo {
+        color: var(--header-list-color);
+        margin-right: 93px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 .header-container {
@@ -13,19 +19,6 @@
 .nav {
     display: flex;
     align-items: center;
-}
-
-.nav-logo {
-    margin-right: 93px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--header-list-color);
 }
 
 .header-links {
@@ -58,21 +51,43 @@
     color: var(--header-list-color);
 }
 
-.nav-logo>span {
-    color: #2196f3;
-}
-
-.header-mail,
-.header-tel {
+.header-mail {
+    line-height: 1.14;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--first-text-color);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #2196f3;
+    }
+}
+
+.header-tel {
+    margin-left: 50px;
+    line-height: 1.14;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--first-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #2196f3;
+    }
 }
 
 .hm-icon {
@@ -80,20 +95,6 @@
     height: 12px;
     fill: currentColor;
     margin-right: 10px;
-}
-
-.header-mail:hover,
-.header-tel:hover,
-.header-mail:focus,
-.header-tel:focus {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #2196f3;
-}
-
-.header-tel {
-    margin-left: 50px;
 }
 
 .current {

@@ -2,6 +2,9 @@
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+    .nav-logo {
+        color: #ffffff;
+    }
 }
 
 .f-container {
@@ -11,19 +14,6 @@
 .footer-container {
     display: flex;
     flex-direction: column;
-}
-
-.footer .nav-logo {
-    color: #ffffff;
-}
-
-.nav-logo {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
 }
 
 .footer-item a {
@@ -58,11 +48,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address:hover,
-.address:focus {
-    color: #2196f3;
+    &:hover,
+    &:focus {
+        color: #2196f3;
+    }
 }
 
 .footer-item+.footer-item {
@@ -101,11 +90,10 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.flink:hover,
-.flink:focus {
-    background-color: var(--second-lnk-color);
+    &:hover,
+    &:focus {
+        background-color: var(--second-lnk-color);
+    }
 }
 
 .flink-icon {
@@ -138,25 +126,22 @@
     border-radius: 4px;
     margin-right: 12px;
     outline: none;
-    /* padding-left: 16px; */
     font-size: 16px;
     line-height: 1.25;
     align-items: center;
     letter-spacing: 0.03em;
-}
-
-.f-input::placeholder {
-    padding-left: 16px;
-    font-size: 16px;
-    line-height: 1.25;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.f-input:focus {
-    color: #ffffff;
-    padding-left: 16px;
+    &:focus {
+        color: #ffffff;
+        padding-left: 16px;
+    }
+    &::placeholder {
+        padding-left: 16px;
+        font-size: 16px;
+        line-height: 1.25;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .f-btn {
