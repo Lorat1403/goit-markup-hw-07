@@ -7,11 +7,11 @@
     margin: 0 auto;
 }
 
-.qualities-list>.qualities-item {
+.qualities-list>.qualities-list__item {
     flex-basis: calc(100% / 4);
 }
 
-.qualities-title {
+.qualities-list__title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -21,7 +21,7 @@
     color: var(--first-title-color);
 }
 
-.qualities-text {
+.qualities-list__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -29,7 +29,7 @@
     text-align: left;
 }
 
-.qualities-item+.qualities-item {
+.qualities-list__item+.qualities-list__item {
     margin-left: 30px;
 }
 

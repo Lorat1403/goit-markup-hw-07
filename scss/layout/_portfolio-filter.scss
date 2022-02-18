@@ -4,7 +4,7 @@
     margin-bottom: 50px;
 }
 
-.filter-item+.filter-item {
+.filter-list__item+.filter-list__item {
     margin-left: 8px;
 }
 
@@ -13,10 +13,7 @@
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding: 6px 22px;
     letter-spacing: 0.03em;
     color: var(--first-title-color);
     background-color: #f5f4fa;
@@ -27,10 +24,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        font-size: 16px;
-        line-height: 1.62;
-        text-align: center;
-        letter-spacing: 0.03em;
         color: #ffffff;
         background-color: var(--second-lnk-color);
     }

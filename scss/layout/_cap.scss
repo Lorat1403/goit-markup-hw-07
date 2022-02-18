@@ -10,7 +10,7 @@
     background-size: cover;
 }
 
-.cap-title {
+.cap__title {
     font-size: 44px;
     font-weight: 900;
     text-align: center;
@@ -21,13 +21,13 @@
     margin-bottom: 30px;
 }
 
-.tumb-btn {
+.cap-thumb {
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
 
-.cap-btn {
+.cap-thumb__btn {
     width: 200px;
     height: 50px;
     font-weight: 500;
@@ -48,15 +48,4 @@
         color: #ffffff;
         background-color: #188ce8;
     }
-}
-
-.section-title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--first-title-color);
-    margin-bottom: 50px;
 }
