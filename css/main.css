@@ -289,6 +289,35 @@ body {
   align-items: center;
 }
 
+.header-list {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-list__link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-list__link:hover, .header-list__link:focus {
+  color: #2196f3;
+}
+
+.header-list__item + .header-list__item {
+  margin-left: 40px;
+}
+
+.header-list__item a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--header-list-color);
+}
+
 .header-links {
   display: flex;
   align-items: center;
@@ -300,26 +329,7 @@ body {
   color: var(--header-list-color);
 }
 
-.header-list {
-  display: flex;
-  margin-right: auto;
-  align-items: center;
-}
-
-.header-item + .header-item {
-  margin-left: 40px;
-}
-
-.header-item a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--header-list-color);
-}
-
-.header-mail {
+.header-links__mail {
   line-height: 1.14;
   font-weight: 500;
   font-size: 14px;
@@ -331,14 +341,14 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-mail:hover, .header-mail:focus {
+.header-links__mail:hover, .header-links__mail:focus {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 
-.header-tel {
+.header-links__tel {
   margin-left: 50px;
   line-height: 1.14;
   font-weight: 500;
@@ -351,14 +361,14 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-tel:hover, .header-tel:focus {
+.header-links__tel:hover, .header-links__tel:focus {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 
-.hm-icon {
+.header-links__icon {
   width: 16px;
   height: 12px;
   fill: currentColor;
@@ -379,16 +389,6 @@ body {
   bottom: -32px;
   background-color: #2196f3;
   border-radius: 2px;
-}
-
-.header-link {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover, .header-link:focus {
-  color: #2196f3;
 }
 
 .cap {
