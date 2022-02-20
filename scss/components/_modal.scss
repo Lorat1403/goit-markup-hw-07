@@ -29,7 +29,7 @@
     transform: translate(50%, 50%) rotate(-270deg);
 }
 
-.close-btn {
+.modal-close-btn__icon {
     width: 18px;
     height: 18px;
 }
@@ -54,7 +54,7 @@
     }
 }
 
-.form-title {
+.modal__title {
     margin-bottom: 12px;
     text-align: center;
     font-weight: bold;
@@ -83,14 +83,14 @@
     position: relative;
 }
 
-.modal-icon {
+.modal-input__icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.modal-text {
+.modal-field__text {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -99,25 +99,24 @@
     border-radius: 4px;
     outline: none;
     resize: none;
+    &::placeholder {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
-.modal-text:focus,
+.modal-field__text:focus,
 .modal-input:focus {
     border-color: var(--second-lnk-color);
 }
 
-.modal-input:focus+.modal-icon {
+.modal-input:focus+.modal-input__icon {
     fill: var(--second-lnk-color);
 }
 
-.modal-text::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-label {
+.modal-field__label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -131,11 +130,11 @@
     margin-bottom: 30px;
 }
 
-.modal-check {
+.check-field__input {
     position: absolute;
 }
 
-.check-label {
+.check-field__label {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -144,7 +143,7 @@
     align-items: center;
 }
 
-.modal-check:checked+.check-label span {
+.check-field__input:checked+.check-field__label span {
     width: 16px;
     height: 15px;
     background-image: url(../images/icon-check.svg);
